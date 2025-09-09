@@ -37,7 +37,7 @@ curl -X POST -H "Content-Type: application/json" --data '{
         "tx": "YOUR_BASE64_ENCODED_TX_HERE"
     },
     "id": 1
-}' https://rpc.testnet.twilight.rest | jq .
+}' http://127.0.0.1:8080 | jq .
 ```
 
 Replace `YOUR_BASE64_ENCODED_TX_HERE` with your actual base64 encoded transaction string. The output is piped to `jq` for pretty-printing.
